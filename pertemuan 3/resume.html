@@ -1,27 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Resume Saya - Portofolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Resume Saya</h1>
 
-    <h2>Data Diri</h2>
-    <p>Nama: Nama Kamu</p>
-    <p>Email: emailkamu@gmail.com</p>
+<body class="halaman-resume">
 
-    <h2>Pendidikan</h2>
-    <p>Program Studi: Informatika</p>
+    <header class="resume-header">
+        <h1>Resume Saya</h1>
+        <p>Informasi Data Diri, Pendidikan, dan Keahlian</p>
+    </header>
 
-    <h2>Keahlian</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Git & GitHub</li>
-    </ul>
+    <main class="resume-main">
 
-    <a href="index.html">Kembali ke Beranda</a>
+        <section class="resume-container">
+
+            <!-- DATA DIRI -->
+            <article class="resume-card">
+                <div class="resume-icon">👤</div>
+
+                <h2>Data Diri</h2>
+
+                <p>
+                    <strong>Nama:</strong> Nama Kamu
+                </p>
+
+                <p>
+                    <strong>Email:</strong> emailkamu@gmail.com
+                </p>
+            </article>
+
+            <!-- PENDIDIKAN -->
+            <article class="resume-card">
+                <div class="resume-icon">🎓</div>
+
+                <h2>Pendidikan</h2>
+
+                <p>
+                    <strong>Program Studi:</strong>
+                    Informatika
+                </p>
+            </article>
+
+            <!-- KEAHLIAN -->
+            <article class="resume-card">
+                <div class="resume-icon">💻</div>
+
+                <h2>Keahlian</h2>
+
+                <ul class="resume-skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </article>
+
+        </section>
+
+        <!-- TOMBOL KEMBALI -->
+        <div class="resume-back">
+            <a href="index.html" class="resume-btn">
+                ← Kembali ke Beranda
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="resume-footer">
+        <p>&copy; 2026 Teknik Informatika ITG</p>
+    </footer>
+
 </body>
+
 </html>

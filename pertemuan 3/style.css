@@ -181,3 +181,542 @@ footer {
       font-size: 1.8rem;
    }
 }
+
+/* ==================================
+   DESAIN KHUSUS HALAMAN KONTAK
+================================== */
+
+.halaman-kontak {
+   background: linear-gradient(135deg, #0f0b1e, #291348, #451a70);
+   min-height: 100vh;
+   color: white;
+}
+
+/* HEADER KONTAK */
+.halaman-kontak .kontak-header {
+   text-align: center;
+   padding: 40px 20px;
+   background: rgba(28, 16, 51, 0.95);
+}
+
+.halaman-kontak .kontak-header h1 {
+   font-size: 38px;
+   color: #d8b4fe;
+   margin: 0;
+}
+
+/* GARIS PEMBATAS */
+.halaman-kontak hr {
+   border: none;
+   height: 1px;
+   background: #7c3aed;
+}
+
+/* KONTEN UTAMA */
+.halaman-kontak .kontak-main {
+   width: 90%;
+   max-width: 850px;
+   margin: 50px auto;
+}
+
+/* KARTU FORMULIR */
+.halaman-kontak .kontak-card {
+   background: rgba(33, 25, 54, 0.95);
+   padding: 40px;
+   border: 1px solid #8b5cf6;
+   border-radius: 20px;
+   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+   transition: 0.3s;
+}
+
+.halaman-kontak .kontak-card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 20px 45px rgba(139, 92, 246, 0.25);
+}
+
+/* JUDUL FORM */
+.halaman-kontak .kontak-card h2 {
+   text-align: center;
+   color: #c084fc;
+   font-size: 24px;
+   margin-bottom: 30px;
+   padding-bottom: 15px;
+   border-bottom: 1px solid #6d28d9;
+}
+
+/* LABEL FORM */
+.halaman-kontak label {
+   display: inline-block;
+   color: #e9d5ff;
+   font-weight: 500;
+   margin-bottom: 8px;
+}
+
+/* INPUT, SELECT, TEXTAREA */
+.halaman-kontak input,
+.halaman-kontak select,
+.halaman-kontak textarea {
+   display: block;
+   width: 100%;
+   padding: 14px;
+   margin: 8px 0 20px;
+   background: #160f2b;
+   border: 1px solid #6d28d9;
+   border-radius: 10px;
+   color: white;
+   font-family: inherit;
+   font-size: 14px;
+   transition: 0.3s;
+}
+
+/* EFEK FOKUS */
+.halaman-kontak input:focus,
+.halaman-kontak select:focus,
+.halaman-kontak textarea:focus {
+   outline: none;
+   border-color: #c084fc;
+   box-shadow: 0 0 12px rgba(168, 85, 247, 0.4);
+}
+
+.halaman-kontak textarea {
+   resize: vertical;
+}
+
+/* TOMBOL FORM */
+.halaman-kontak .kontak-buttons {
+   display: flex;
+   gap: 15px;
+   margin-top: 25px;
+}
+
+.halaman-kontak button {
+   flex: 1;
+   padding: 14px 20px;
+   border: none;
+   border-radius: 10px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+/* TOMBOL KIRIM */
+.halaman-kontak button[type="submit"] {
+   background: linear-gradient(135deg, #7c3aed, #a855f7);
+   color: white;
+}
+
+.halaman-kontak button[type="submit"]:hover {
+   background: #9333ea;
+   transform: translateY(-3px);
+   box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);
+}
+
+/* TOMBOL RESET */
+.halaman-kontak button[type="reset"] {
+   background: #514164;
+   color: white;
+}
+
+.halaman-kontak button[type="reset"]:hover {
+   background: #6b5685;
+   transform: translateY(-3px);
+}
+
+/* FOOTER */
+.halaman-kontak footer {
+   text-align: center;
+   padding: 25px;
+   background: #160f2b;
+   margin-top: 40px;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 600px) {
+   .halaman-kontak .kontak-header h1 {
+      font-size: 28px;
+   }
+
+   .halaman-kontak .kontak-main {
+      width: 94%;
+      margin: 25px auto;
+   }
+
+   .halaman-kontak .kontak-card {
+      padding: 22px;
+   }
+
+   .halaman-kontak .kontak-card h2 {
+      font-size: 20px;
+   }
+
+   .halaman-kontak .kontak-buttons {
+      flex-direction: column;
+   }
+}
+
+/* ==================================
+   DESAIN KHUSUS HALAMAN PROJECT
+================================== */
+
+.halaman-project {
+   background: linear-gradient(135deg,
+         #0f0b1e,
+         #291348,
+         #451a70);
+   min-height: 100vh;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER PROJECT */
+
+.halaman-project .project-header {
+   text-align: center;
+   padding: 55px 20px;
+   background: rgba(28, 16, 51, 0.95);
+}
+
+.halaman-project .project-header h1 {
+   font-size: 42px;
+   color: #d8b4fe;
+   margin-bottom: 10px;
+}
+
+.halaman-project .project-header p {
+   color: #c4b5d9;
+   font-size: 16px;
+}
+
+/* KONTEN PROJECT */
+
+.halaman-project .project-main {
+   width: 90%;
+   max-width: 1100px;
+   margin: 60px auto;
+}
+
+/* GRID PROJECT */
+
+.halaman-project .project-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 25px;
+   background: transparent;
+   border: none;
+   padding: 0;
+   box-shadow: none;
+}
+
+.halaman-project .project-container:hover {
+   transform: none;
+   box-shadow: none;
+}
+
+/* KARTU PROJECT */
+
+.halaman-project .project-card {
+   background: rgba(33, 25, 54, 0.95);
+   padding: 35px 25px;
+   border-radius: 18px;
+   border: 1px solid #6d28d9;
+   text-align: center;
+   transition: 0.3s ease;
+   min-height: 240px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+/* EFEK HOVER */
+
+.halaman-project .project-card:hover {
+   transform: translateY(-10px);
+   border-color: #c084fc;
+   box-shadow: 0 15px 35px rgba(139, 92, 246, 0.3);
+}
+
+/* NOMOR PROJECT */
+
+.halaman-project .project-number {
+   width: 55px;
+   height: 55px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(135deg,
+         #7c3aed,
+         #a855f7);
+   color: white;
+   font-size: 20px;
+   font-weight: 700;
+   border-radius: 15px;
+   margin-bottom: 20px;
+}
+
+/* JUDUL PROJECT */
+
+.halaman-project .project-card h2 {
+   color: #d8b4fe;
+   font-size: 23px;
+   margin-bottom: 12px;
+}
+
+/* DESKRIPSI PROJECT */
+
+.halaman-project .project-card p {
+   color: #c4b5d9;
+   font-size: 15px;
+   line-height: 1.7;
+}
+
+/* FOOTER */
+
+.halaman-project .project-footer {
+   text-align: center;
+   padding: 25px;
+   background: #160f2b;
+   margin-top: 50px;
+}
+
+/* RESPONSIVE TABLET */
+
+@media (max-width: 900px) {
+   .halaman-project .project-container {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+/* RESPONSIVE HP */
+
+@media (max-width: 600px) {
+   .halaman-project .project-header h1 {
+      font-size: 30px;
+   }
+
+   .halaman-project .project-main {
+      width: 92%;
+      margin: 30px auto;
+   }
+
+   .halaman-project .project-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
+
+   .halaman-project .project-card {
+      min-height: 200px;
+      padding: 25px;
+   }
+}
+
+/* ==================================
+   DESAIN KHUSUS HALAMAN RESUME
+================================== */
+
+.halaman-resume {
+   background: linear-gradient(135deg,
+         #0f0b1e,
+         #291348,
+         #451a70);
+   min-height: 100vh;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER RESUME */
+
+.halaman-resume .resume-header {
+   text-align: center;
+   padding: 55px 20px;
+   background: rgba(28, 16, 51, 0.95);
+}
+
+.halaman-resume .resume-header h1 {
+   font-size: 42px;
+   color: #d8b4fe;
+   margin-bottom: 10px;
+}
+
+.halaman-resume .resume-header p {
+   color: #c4b5d9;
+   font-size: 16px;
+}
+
+/* KONTEN UTAMA */
+
+.halaman-resume .resume-main {
+   width: 90%;
+   max-width: 1100px;
+   margin: 60px auto;
+}
+
+/* GRID RESUME */
+
+.halaman-resume .resume-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 25px;
+   background: transparent;
+   border: none;
+   padding: 0;
+   box-shadow: none;
+}
+
+.halaman-resume .resume-container:hover {
+   transform: none;
+   box-shadow: none;
+}
+
+/* KARTU RESUME */
+
+.halaman-resume .resume-card {
+   background: rgba(33, 25, 54, 0.95);
+   padding: 35px 25px;
+   border-radius: 18px;
+   border: 1px solid #6d28d9;
+   text-align: center;
+   transition: 0.3s ease;
+   min-height: 260px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+/* EFEK HOVER */
+
+.halaman-resume .resume-card:hover {
+   transform: translateY(-10px);
+   border-color: #c084fc;
+   box-shadow: 0 15px 35px rgba(139, 92, 246, 0.3);
+}
+
+/* ICON RESUME */
+
+.halaman-resume .resume-icon {
+   width: 60px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(135deg,
+         #7c3aed,
+         #a855f7);
+   font-size: 28px;
+   border-radius: 15px;
+   margin-bottom: 20px;
+}
+
+/* JUDUL KARTU */
+
+.halaman-resume .resume-card h2 {
+   color: #d8b4fe;
+   font-size: 23px;
+   margin-bottom: 15px;
+}
+
+/* TEKS RESUME */
+
+.halaman-resume .resume-card p {
+   color: #c4b5d9;
+   font-size: 14px;
+   margin-bottom: 10px;
+   overflow-wrap: anywhere;
+}
+
+.halaman-resume .resume-card strong {
+   color: #e9d5ff;
+}
+
+/* KEAHLIAN */
+
+.halaman-resume .resume-skills {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 10px;
+}
+
+.halaman-resume .resume-skills li {
+   background: #3b245e;
+   color: #e9d5ff;
+   padding: 8px 15px;
+   border-radius: 20px;
+   border: 1px solid #8b5cf6;
+   font-size: 13px;
+   transition: 0.3s;
+}
+
+.halaman-resume .resume-skills li:hover {
+   background: #7c3aed;
+   transform: translateY(-3px);
+}
+
+/* TOMBOL KEMBALI */
+
+.halaman-resume .resume-back {
+   text-align: center;
+   margin-top: 40px;
+}
+
+.halaman-resume .resume-btn {
+   display: inline-block;
+   padding: 13px 28px;
+   background: linear-gradient(135deg,
+         #7c3aed,
+         #a855f7);
+   color: white;
+   text-decoration: none;
+   border-radius: 10px;
+   font-weight: 600;
+   transition: 0.3s;
+}
+
+.halaman-resume .resume-btn:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);
+}
+
+/* FOOTER */
+
+.halaman-resume .resume-footer {
+   text-align: center;
+   padding: 25px;
+   background: #160f2b;
+   margin-top: 50px;
+}
+
+/* RESPONSIVE TABLET */
+
+@media (max-width: 900px) {
+   .halaman-resume .resume-container {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+/* RESPONSIVE HP */
+
+@media (max-width: 600px) {
+   .halaman-resume .resume-header h1 {
+      font-size: 30px;
+   }
+
+   .halaman-resume .resume-main {
+      width: 92%;
+      margin: 30px auto;
+   }
+
+   .halaman-resume .resume-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
+
+   .halaman-resume .resume-card {
+      min-height: 220px;
+      padding: 25px;
+   }
+}
